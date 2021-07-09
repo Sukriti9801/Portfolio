@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to left , #fff 85%, rgb(139, 142, 212) 20%);
+}
+.navsection{
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    background-image: linear-gradient(to top , #fff 85%, rgb(139, 142, 212) 20%);
+}
+.logo{
+  width: 40%;
+  color: white;
+  background-image: linear-gradient(rgb(139, 142, 212) 60% , rgb(53, 67, 211) 40%);
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+.logo h1{
+  text-transform: uppercase;
+padding: 1.6px;
+animation: frontback 2s infinite;
+}
+@keyframes frontback {
+  from{
+    padding-right: 10px;
+  }
+  to{
+    padding-left: 50px;
+  }
+}
+nav{
+  width: 60%;
+  justify-content: space-around;
+  display: flex;
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav a:before{
+  content: "";
+  position: absolute;
+  top: 110%;
+ left: 0;
+ width: 0;
+ height: 2px;
+ border-bottom: 2px solid #2940D3;
+ transition: all 0.4s linear;
+}
+nav a:hover:before{
+  width: 100%;
+}
+main{
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftside img{
+  max-width: 500px;
+height: 350px;
+margin-left: 30%;
+}
+.rightside{
+  color: black;
+  text-transform: uppercase;
+}
+.rightside h3{
+font-size: 40px;
+text-transform: 20px;
+  margin-left: 35%;
+}
+.rightside p{
+  margin-left: 35%;
+  margin-right: 23%;
+}
